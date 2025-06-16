@@ -21,4 +21,8 @@ describe('Leap Year', () => {
     it('should return false for years not divisible by 4', () => {
         expect(isLeapYear(2017)).toBe(false)
     })
+
+    it('should return false for years divisible by 4000', () => {
+        expect(isLeapYear(4000)).toBe(false)
+    })
 })
